@@ -19,7 +19,7 @@
 
 <br /><br />
 
-**[🌐 View Live Portfolio](https://github.com/Ketanrawat2004/Portfolio_Ketan) • [📄 Download Resume](https://github.com/Ketanrawat2004/Portfolio_Ketan/raw/main/public/Ketan_Rawat.pdf)**
+**[🌐 View Live Portfolio](https://portfolio-ketan.onrender.com/) • [📄 Download Resume](https://portfolio-ketan.onrender.com/Ketan_Rawat.pdf)**
 
 </div>
 

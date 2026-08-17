@@ -176,15 +176,15 @@ export function setAllTimeline() {
   if (window.innerWidth > 1024) {
     careerTimeline.fromTo(
       ".career-section",
-      { y: 0 },
-      { y: "20%", duration: 0.5, delay: 0.2 },
+      { opacity: 1 },
+      { opacity: 1, duration: 0.5, delay: 0.2 },
       0
     );
   } else {
     careerTimeline.fromTo(
       ".career-section",
-      { y: 0 },
-      { y: 0, duration: 0.5, delay: 0.2 },
+      { opacity: 1 },
+      { opacity: 1, duration: 0.5, delay: 0.2 },
       0
     );
   }

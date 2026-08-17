@@ -37,6 +37,14 @@ const projects = [
     link: "https://bookztron-dev-branch.netlify.app/",
     github: "https://github.com/Ketanrawat2004/Bookztron",
   },
+  {
+    title: "Portfolio · 3D Developer Portfolio",
+    category: "3D Interactive WebGL & Physics Portfolio Platform",
+    tools: "React 18, TypeScript, Three.js, React Three Fiber, Rapier Physics, GSAP ScrollSmoother",
+    image: "/images/portfolio_preview.png",
+    link: "https://portfolio-ketan.onrender.com/",
+    github: "https://github.com/Ketanrawat2004/Portfolio_Ketan",
+  },
 ];
 
 const Work = () => {

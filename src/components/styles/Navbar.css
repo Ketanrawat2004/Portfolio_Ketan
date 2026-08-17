@@ -52,7 +52,8 @@
   .header ul {
     flex-direction: row;
     align-items: center;
-    font-size: 14px;
+    font-size: 13.5px;
+    column-gap: 26px;
   }
   .header ul li {
     color: #eae5ec;
@@ -65,14 +66,17 @@
   .navbar-connect {
     display: block;
   }
+  .header ul {
+    column-gap: 36px;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .header {
     padding: 35px 0px;
   }
   .header ul {
-    column-gap: 80px;
-    font-size: 16px;
+    column-gap: 52px;
+    font-size: 15px;
   }
   .navbar-connect {
     font-size: 16px;
