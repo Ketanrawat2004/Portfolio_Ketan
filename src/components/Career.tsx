@@ -1,6 +1,13 @@
 import "./styles/Career.css";
+import CodingStats from "./CodingStats";
 
 const achievements = [
+  {
+    year: "2026",
+    role: "DSA & Algorithmic Problem Solving",
+    org: "Coding Practice for Placements & Interviews · Placement Portal",
+    desc: "Solved 84+ curated algorithmic problems (31 Easy, 34 Medium, 19 Hard) across Data Structures & Algorithms, securing 9,810+ points with consistent POTD problem-solving streaks and high-percentile placement standing.",
+  },
   {
     year: "2026",
     role: "Semi-Finalist",
@@ -59,12 +66,16 @@ const achievements = [
 
 const Career = () => {
   return (
-    <div className="career-section section-container">
+    <div className="career-section section-container" id="career">
       <div className="career-container">
         <h2>
           Achievements <span>&</span>
           <br /> Involvement
         </h2>
+
+        {/* Interactive DSA & Coding Practice Achievement Card */}
+        <CodingStats />
+
         <div className="career-info">
           <div className="career-timeline">
             <div className="career-dot"></div>
