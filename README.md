@@ -15,7 +15,11 @@
 
 <br />
 
-**[🌐 View Live Portfolio](https://github.com/Ketanrawat2004) • [📄 Download Resume](https://github.com/Ketanrawat2004)**
+<img src="./public/images/portfolio_preview.png" alt="Ketan Rawat 3D Portfolio Preview" width="100%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" />
+
+<br /><br />
+
+**[🌐 View Live Portfolio](https://github.com/Ketanrawat2004/Portfolio_Ketan) • [📄 Download Resume](https://github.com/Ketanrawat2004/Portfolio_Ketan/raw/main/public/Ketan_Rawat.pdf)**
 
 </div>
 
