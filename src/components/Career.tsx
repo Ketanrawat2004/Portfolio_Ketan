@@ -4,9 +4,9 @@ import CodingStats from "./CodingStats";
 const achievements = [
   {
     year: "2026",
-    role: "DSA & Algorithmic Problem Solving",
-    org: "Coding Practice for Placements & Interviews · Placement Portal",
-    desc: "Solved 84+ curated algorithmic problems (31 Easy, 34 Medium, 19 Hard) across Data Structures & Algorithms, securing 9,810+ points with consistent POTD problem-solving streaks and high-percentile placement standing.",
+    role: "DSA & Problem Solving",
+    org: "Competitive Programming & Unstop",
+    desc: "Solved 150+ problems in Data Structures & Algorithms. Ranked under Global Top 1000 on Unstop.",
   },
   {
     year: "2026",
