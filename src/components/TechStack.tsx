@@ -193,31 +193,38 @@ function Pointer({ vec = new THREE.Vector3(), isActive }: PointerProps) {
 
 const TechStack = () => {
   const [isActive, setIsActive] = useState(false);
+  const [isMobile, setIsMobile] = useState(() =>
+    typeof window !== "undefined" ? window.innerWidth < 768 : false
+  );
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY || document.documentElement.scrollTop;
-      const threshold = document
-        .getElementById("work")!
-        .getBoundingClientRect().top;
-      setIsActive(scrollY > threshold);
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
     };
-    document.querySelectorAll(".header a").forEach((elem) => {
-      const element = elem as HTMLAnchorElement;
-      element.addEventListener("click", () => {
-        const interval = setInterval(() => {
-          handleScroll();
-        }, 10);
-        setTimeout(() => {
-          clearInterval(interval);
-        }, 1000);
-      });
-    });
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    window.addEventListener("resize", handleResize);
+
+    const el = containerRef.current;
+    if (el && "IntersectionObserver" in window) {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          setIsActive(entry.isIntersecting);
+        },
+        { rootMargin: "300px 0px" }
+      );
+      observer.observe(el);
+      return () => {
+        observer.disconnect();
+        window.removeEventListener("resize", handleResize);
+      };
+    } else {
+      setIsActive(true);
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }
   }, []);
+
   const materials = useMemo(() => {
     const dynamicTextures = techDefinitions.map((t) =>
       createTechTexture(t.name, t.symbol, t.bgColor, t.textColor, t.accentColor)
@@ -238,14 +245,19 @@ const TechStack = () => {
   }, []);
 
   return (
-    <div className="techstack">
+    <div className="techstack" id="techstack" ref={containerRef}>
       <h2> My Techstack</h2>
 
       <Canvas
-        dpr={[1, 1.5]}
+        dpr={[1, isMobile ? 1.25 : 1.5]}
         shadows={false}
         gl={{ alpha: true, stencil: false, depth: false, antialias: false, powerPreference: "high-performance" }}
-        camera={{ position: [0, 0, 20], fov: 32.5, near: 1, far: 100 }}
+        camera={{
+          position: [0, 0, isMobile ? 30 : 20],
+          fov: isMobile ? 40 : 32.5,
+          near: 1,
+          far: 100,
+        }}
         onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}
         className="tech-canvas"
       >

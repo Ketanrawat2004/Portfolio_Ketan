@@ -122,6 +122,18 @@ body {
   left: 0;
   font-weight: 400;
   text-transform: uppercase;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.techstack-loading {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+  font-size: 15px;
+  letter-spacing: 0.5px;
 }
 
 @media screen and (min-width: 768px) {
@@ -131,7 +143,14 @@ body {
 }
 
 @media screen and (max-width: 900px) {
+  .techstack {
+    height: 80vh;
+    min-height: 520px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
   .techstack h2 {
-    font-size: 40px;
+    font-size: 38px;
+    top: 50px;
   }
 }
