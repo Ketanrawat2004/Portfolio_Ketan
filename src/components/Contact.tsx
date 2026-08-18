@@ -1,4 +1,5 @@
 import { MdSchool, MdCopyright } from "react-icons/md";
+import { FaGithub, FaLinkedinIn, FaEnvelope } from "react-icons/fa6";
 import "./styles/Contact.css";
 
 const educationData = [
@@ -27,10 +28,10 @@ const educationData = [
 
 const Contact = () => {
   return (
-    <div className="contact-section section-container" id="contact">
+    <div className="contact-section section-container">
       <div className="contact-container">
         {/* Education Showcase Card */}
-        <div className="education-showcase-card">
+        <div className="education-showcase-card" id="education">
           <div className="education-card-header">
             <div className="edu-badge-tag">Academic Background</div>
             <h3>Education</h3>
@@ -60,6 +61,65 @@ const Contact = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Simple Clean Contact Section */}
+        <div className="contact-card" id="contact">
+          <div className="contact-card-header">
+            <div className="contact-badge-tag">Get in Touch</div>
+            <h3>Contact</h3>
+            <p className="contact-subtitle">
+              Feel free to connect for opportunities, projects, or any questions.
+            </p>
+          </div>
+
+          <div className="contact-links-grid">
+            <a
+              href="https://github.com/Ketanrawat2004"
+              target="_blank"
+              rel="noreferrer"
+              className="contact-pill-item"
+              aria-label="GitHub"
+            >
+              <div className="contact-icon-circle github-icon">
+                <FaGithub />
+              </div>
+              <div className="contact-link-info">
+                <span className="contact-link-title">GitHub</span>
+                <span className="contact-link-handle">github.com/Ketanrawat2004</span>
+              </div>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/ketan-rawat-97a8aa2a0/"
+              target="_blank"
+              rel="noreferrer"
+              className="contact-pill-item"
+              aria-label="LinkedIn"
+            >
+              <div className="contact-icon-circle linkedin-icon">
+                <FaLinkedinIn />
+              </div>
+              <div className="contact-link-info">
+                <span className="contact-link-title">LinkedIn</span>
+                <span className="contact-link-handle">linkedin.com/in/ketan-rawat</span>
+              </div>
+            </a>
+
+            <a
+              href="mailto:rawatketan06@gmail.com"
+              className="contact-pill-item"
+              aria-label="Email"
+            >
+              <div className="contact-icon-circle email-icon">
+                <FaEnvelope />
+              </div>
+              <div className="contact-link-info">
+                <span className="contact-link-title">Email</span>
+                <span className="contact-link-handle">rawatketan06@gmail.com</span>
+              </div>
+            </a>
           </div>
         </div>
 
