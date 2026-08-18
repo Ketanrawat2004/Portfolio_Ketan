@@ -63,7 +63,7 @@ I am **Ketan Rawat**, a final-year B.Tech student in **Electronics & Communicati
 ### 3. 🍱 [CampusBite](https://github.com/Ketanrawat2004/campusBite)
 > **Event-Driven Microservices Campus Food Delivery Ecosystem**
 - **Stack:** React, Node.js, Express.js, MongoDB, Redis, Apache Kafka, Docker Compose, Razorpay API
-- **Live Demo:** [https://github.com/Ketanrawat2004/campusBite](https://github.com/Ketanrawat2004/campusBite)
+- **Live Demo:** [https://campusbite-jpwq.onrender.com/](https://campusbite-jpwq.onrender.com/)
 - Campus food ordering system with smart group pooling (lowering delivery fees to ₹10–15), real-time kitchen queue metrics, and automated Kafka event updates.
 
 ### 4. 📚 [Bookztron](https://github.com/Ketanrawat2004/Bookztron)

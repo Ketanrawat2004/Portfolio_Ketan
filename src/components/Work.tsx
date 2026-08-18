@@ -26,7 +26,7 @@ const projects = [
     category: "Event-Driven Microservices Campus Food Delivery Ecosystem",
     tools: "React, Node.js, Express, MongoDB, Redis, Apache Kafka, Docker Compose, Razorpay",
     image: "/images/campusbite.png",
-    link: "https://github.com/Ketanrawat2004/campusBite",
+    link: "https://campusbite-jpwq.onrender.com/",
     github: "https://github.com/Ketanrawat2004/campusBite",
   },
   {
