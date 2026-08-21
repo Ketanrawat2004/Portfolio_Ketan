@@ -99,7 +99,7 @@ body {
 .split-h2 {
   overflow: hidden;
   display: flex;
-  white-space: nowrap;
+  white-space: pre;
   flex-wrap: nowrap;
 }
 
